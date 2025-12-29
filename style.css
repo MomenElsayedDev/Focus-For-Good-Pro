@@ -1,0 +1,164 @@
+:root {
+  --bg: #eef2f7;
+  --card: rgba(255,255,255,0.85);
+  --text: #1a1a1a;
+  --accent: #4f46e5;
+  --transition: 0.5s ease-in-out;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --card: rgba(30,41,59,0.85);
+  --text: #f8fafc;
+  --accent: #38bdf8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background var(--transition), color var(--transition);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.4s;
+  color: var(--accent);
+}
+
+#themeToggle:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+
+.app {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: var(--card);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: background var(--transition), transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: border-color var(--transition);
+}
+
+body.dark .task-input input {
+  border-color: #555;
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+}
+
+button {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+button:hover {
+  background: #312efb;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: rgba(0,0,0,0.05);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.dark li {
+  background: rgba(255,255,255,0.1);
+}
+
+.timer-card {
+  text-align: center;
+}
+
+#timer {
+  font-size: 3rem;
+  margin: 15px 0;
+  transition: color var(--transition);
+}
+
+.timer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.impact-text {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 500px) {
+  .task-input input, button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  #timer {
+    font-size: 2.2rem;
+  }
+}

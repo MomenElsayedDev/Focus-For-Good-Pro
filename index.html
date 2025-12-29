@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus4Good Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <h1>Focus4Good</h1>
+    <button id="themeToggle" aria-label="Toggle theme" aria-pressed="false">
+      <!-- Default: Moon SVG -->
+      <svg id="iconSVG" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M21 12.79A9 9 0 0112.21 3c0-.02 0 0 0 0a7 7 0 100 14A9 9 0 0121 12.79z"/>
+      </svg>
+    </button>
+  </header>
+
+  <main class="app">
+    <section class="card" aria-labelledby="add-task">
+      <h2 id="add-task">Add Task</h2>
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="What will you focus on today?" aria-label="Task input"/>
+        <button onclick="addTask()">Add</button>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="task-list">
+      <h2 id="task-list">Your Tasks</h2>
+      <ul id="taskList"></ul>
+    </section>
+
+    <section class="card timer-card" aria-labelledby="focus-timer">
+      <h2 id="focus-timer">Focus Timer</h2>
+      <div id="timer" aria-live="polite">25:00</div>
+      <div class="timer-buttons">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+      <p class="impact-text">Focused time builds a better future 🌱</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with ❤️ for students & social good</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
