@@ -1,5 +1,7 @@
 # 🌟 Focus4Good Pro
 
+![Focus4Good Pro](Demo.png)
+
 **Empowering students with focus, balance, and productivity**
 
 Focus4Good Pro is a modern, responsive web application designed to help students and young people manage their tasks, improve focus, and reduce stress through healthy study habits. It combines productivity tools, a Pomodoro timer, and a user-friendly interface with dark/light mode and accessibility features.
