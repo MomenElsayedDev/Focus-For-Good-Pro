@@ -63,7 +63,7 @@ Focus4Good Pro addresses these issues by providing a simple, privacy-first tool 
 
 ## 🚀 Live Demo
 
-[Try it online](https://youtu.be/HsEpobdqX5A)
+[Live Demo](https://youtu.be/HsEpobdqX5A)
 
 ---
 
