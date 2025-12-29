@@ -57,7 +57,7 @@ Focus4Good Pro addresses these issues by providing a simple, privacy-first tool 
 
 | Light Mode | Dark Mode | Mobile View |
 |------------|-----------|-------------|
-| ![Light](screenshots/light.png) | ![Dark](screenshots/dark.png) | ![Mobile](screenshots/mobile.png) |
+| ![Light](screenshots/light.jpg) | ![Dark](screenshots/dark.jpg) | ![Mobile](screenshots/android.jpg) |
 
 ---
 
